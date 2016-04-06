@@ -1,0 +1,893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		780C17F91CB10F8C0099AD78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 780C17F81CB10F8C0099AD78 /* main.m */; };
+		780C17FC1CB10F8C0099AD78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 780C17FB1CB10F8C0099AD78 /* AppDelegate.m */; };
+		780C18021CB10F8C0099AD78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780C18001CB10F8C0099AD78 /* Main.storyboard */; };
+		780C18071CB10F8C0099AD78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780C18051CB10F8C0099AD78 /* LaunchScreen.storyboard */; };
+		780C18121CB10F8C0099AD78 /* AlexQQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 780C18111CB10F8C0099AD78 /* AlexQQTests.m */; };
+		780C181D1CB10F8C0099AD78 /* AlexQQUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 780C181C1CB10F8C0099AD78 /* AlexQQUITests.m */; };
+		780C18351CB110200099AD78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780C182B1CB110200099AD78 /* LaunchScreen.storyboard */; };
+		780C18361CB110200099AD78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780C182D1CB110200099AD78 /* Main.storyboard */; };
+		780C18381CB110760099AD78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780C18371CB110760099AD78 /* Assets.xcassets */; };
+		780C18491CB14E830099AD78 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 780C183F1CB14E830099AD78 /* FMDatabase.m */; };
+		780C184A1CB14E830099AD78 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 780C18411CB14E830099AD78 /* FMDatabaseAdditions.m */; };
+		780C184B1CB14E830099AD78 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 780C18431CB14E830099AD78 /* FMDatabasePool.m */; };
+		780C184C1CB14E830099AD78 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 780C18451CB14E830099AD78 /* FMDatabaseQueue.m */; };
+		780C184D1CB14E830099AD78 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 780C18481CB14E830099AD78 /* FMResultSet.m */; };
+		780C184F1CB14EA20099AD78 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 780C184E1CB14EA20099AD78 /* libsqlite3.0.tbd */; };
+		780C18521CB15DBF0099AD78 /* AlexQQContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780C18511CB15DBF0099AD78 /* AlexQQContactsViewController.m */; };
+		780C18551CB15DD70099AD78 /* AlexQQMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780C18541CB15DD70099AD78 /* AlexQQMessageViewController.m */; };
+		786A00971CB45E8700E288E4 /* AZMetaBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 786A00881CB45E8700E288E4 /* AZMetaBall.m */; };
+		786A00981CB45E8700E288E4 /* AZMetaBallCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 786A008A1CB45E8700E288E4 /* AZMetaBallCanvas.m */; };
+		786A00991CB45E8700E288E4 /* AZMetaBallItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 786A008C1CB45E8700E288E4 /* AZMetaBallItem.m */; };
+		786A009A1CB45E8700E288E4 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 786A008E1CB45E8700E288E4 /* Circle.m */; };
+		786A009B1CB45E8700E288E4 /* id_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 786A008F1CB45E8700E288E4 /* id_1.png */; };
+		786A009C1CB45E8700E288E4 /* id_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 786A00901CB45E8700E288E4 /* id_2.png */; };
+		786A009D1CB45E8700E288E4 /* id_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 786A00911CB45E8700E288E4 /* id_3.png */; };
+		786A009E1CB45E8700E288E4 /* id_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 786A00921CB45E8700E288E4 /* id_4.png */; };
+		786A009F1CB45E8700E288E4 /* id_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 786A00931CB45E8700E288E4 /* id_5.png */; };
+		786A00A01CB45E8700E288E4 /* PointUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 786A00961CB45E8700E288E4 /* PointUtils.m */; };
+		788BD7F21CB3B8CC00A807C0 /* AlexQQMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 788BD7F11CB3B8CC00A807C0 /* AlexQQMessageTableViewCell.m */; };
+		78934C781CB25B4300CAC571 /* AlexQQContactsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 78934C771CB25B4300CAC571 /* AlexQQContactsRequest.m */; };
+		78934C7B1CB25EBA00CAC571 /* AlexQQContactsRequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 78934C7A1CB25EBA00CAC571 /* AlexQQContactsRequestParser.m */; };
+		78934C7E1CB2612500CAC571 /* AlexQQAuthorsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78934C7D1CB2612500CAC571 /* AlexQQAuthorsModel.m */; };
+		78934C811CB2616600CAC571 /* AlexQQCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78934C801CB2616600CAC571 /* AlexQQCategoryModel.m */; };
+		789D2DF81CB35EB700DAE69D /* AlexQQDataPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 789D2DF71CB35EB700DAE69D /* AlexQQDataPersistence.m */; };
+		78A5C2D71CB2C2870015DFAE /* AlexQQContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A5C2D61CB2C2870015DFAE /* AlexQQContactsTableViewCell.m */; };
+		78D2B7FE1CB2149400FB034E /* AlexQQContactsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D2B7FD1CB2149400FB034E /* AlexQQContactsHeaderView.m */; };
+		EC0CFC0B87EE09942BA32BB3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B4E1D2429B8050EF7649E7 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		780C180E1CB10F8C0099AD78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780C17EC1CB10F8C0099AD78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 780C17F31CB10F8C0099AD78;
+			remoteInfo = AlexQQ;
+		};
+		780C18191CB10F8C0099AD78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780C17EC1CB10F8C0099AD78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 780C17F31CB10F8C0099AD78;
+			remoteInfo = AlexQQ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42B4E1D2429B8050EF7649E7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		780C17F41CB10F8C0099AD78 /* AlexQQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlexQQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		780C17F81CB10F8C0099AD78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		780C17FA1CB10F8C0099AD78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		780C17FB1CB10F8C0099AD78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		780C18011CB10F8C0099AD78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		780C18061CB10F8C0099AD78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		780C18081CB10F8C0099AD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		780C180D1CB10F8C0099AD78 /* AlexQQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlexQQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		780C18111CB10F8C0099AD78 /* AlexQQTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexQQTests.m; sourceTree = "<group>"; };
+		780C18131CB10F8C0099AD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		780C18181CB10F8C0099AD78 /* AlexQQUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlexQQUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		780C181C1CB10F8C0099AD78 /* AlexQQUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexQQUITests.m; sourceTree = "<group>"; };
+		780C181E1CB10F8C0099AD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		780C182C1CB110200099AD78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		780C182E1CB110200099AD78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		780C18371CB110760099AD78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		780C183E1CB14E830099AD78 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		780C183F1CB14E830099AD78 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		780C18401CB14E830099AD78 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		780C18411CB14E830099AD78 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		780C18421CB14E830099AD78 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		780C18431CB14E830099AD78 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		780C18441CB14E830099AD78 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		780C18451CB14E830099AD78 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		780C18461CB14E830099AD78 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		780C18471CB14E830099AD78 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		780C18481CB14E830099AD78 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		780C184E1CB14EA20099AD78 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		780C18501CB15DBF0099AD78 /* AlexQQContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexQQContactsViewController.h; sourceTree = "<group>"; };
+		780C18511CB15DBF0099AD78 /* AlexQQContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexQQContactsViewController.m; sourceTree = "<group>"; };
+		780C18531CB15DD70099AD78 /* AlexQQMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexQQMessageViewController.h; sourceTree = "<group>"; };
+		780C18541CB15DD70099AD78 /* AlexQQMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexQQMessageViewController.m; sourceTree = "<group>"; };
+		786A00871CB45E8700E288E4 /* AZMetaBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZMetaBall.h; sourceTree = "<group>"; };
+		786A00881CB45E8700E288E4 /* AZMetaBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZMetaBall.m; sourceTree = "<group>"; };
+		786A00891CB45E8700E288E4 /* AZMetaBallCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZMetaBallCanvas.h; sourceTree = "<group>"; };
+		786A008A1CB45E8700E288E4 /* AZMetaBallCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZMetaBallCanvas.m; sourceTree = "<group>"; };
+		786A008B1CB45E8700E288E4 /* AZMetaBallItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZMetaBallItem.h; sourceTree = "<group>"; };
+		786A008C1CB45E8700E288E4 /* AZMetaBallItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZMetaBallItem.m; sourceTree = "<group>"; };
+		786A008D1CB45E8700E288E4 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		786A008E1CB45E8700E288E4 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		786A008F1CB45E8700E288E4 /* id_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = id_1.png; sourceTree = "<group>"; };
+		786A00901CB45E8700E288E4 /* id_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = id_2.png; sourceTree = "<group>"; };
+		786A00911CB45E8700E288E4 /* id_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = id_3.png; sourceTree = "<group>"; };
+		786A00921CB45E8700E288E4 /* id_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = id_4.png; sourceTree = "<group>"; };
+		786A00931CB45E8700E288E4 /* id_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = id_5.png; sourceTree = "<group>"; };
+		786A00951CB45E8700E288E4 /* PointUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointUtils.h; sourceTree = "<group>"; };
+		786A00961CB45E8700E288E4 /* PointUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointUtils.m; sourceTree = "<group>"; };
+		788BD7F01CB3B8CC00A807C0 /* AlexQQMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexQQMessageTableViewCell.h; sourceTree = "<group>"; };
+		788BD7F11CB3B8CC00A807C0 /* AlexQQMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexQQMessageTableViewCell.m; sourceTree = "<group>"; };
+		78934C761CB25B4300CAC571 /* AlexQQContactsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexQQContactsRequest.h; sourceTree = "<group>"; };
+		78934C771CB25B4300CAC571 /* AlexQQContactsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexQQContactsRequest.m; sourceTree = "<group>"; };
+		78934C791CB25EBA00CAC571 /* AlexQQContactsRequestParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexQQContactsRequestParser.h; sourceTree = "<group>"; };
+		78934C7A1CB25EBA00CAC571 /* AlexQQContactsRequestParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexQQContactsRequestParser.m; sourceTree = "<group>"; };
+		78934C7C1CB2612500CAC571 /* AlexQQAuthorsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexQQAuthorsModel.h; sourceTree = "<group>"; };
+		78934C7D1CB2612500CAC571 /* AlexQQAuthorsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexQQAuthorsModel.m; sourceTree = "<group>"; };
+		78934C7F1CB2616600CAC571 /* AlexQQCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexQQCategoryModel.h; sourceTree = "<group>"; };
+		78934C801CB2616600CAC571 /* AlexQQCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexQQCategoryModel.m; sourceTree = "<group>"; };
+		789D2DF61CB35EB700DAE69D /* AlexQQDataPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexQQDataPersistence.h; sourceTree = "<group>"; };
+		789D2DF71CB35EB700DAE69D /* AlexQQDataPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexQQDataPersistence.m; sourceTree = "<group>"; };
+		78A5C2D51CB2C2870015DFAE /* AlexQQContactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexQQContactsTableViewCell.h; sourceTree = "<group>"; };
+		78A5C2D61CB2C2870015DFAE /* AlexQQContactsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexQQContactsTableViewCell.m; sourceTree = "<group>"; };
+		78D2B7FC1CB2149400FB034E /* AlexQQContactsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexQQContactsHeaderView.h; sourceTree = "<group>"; };
+		78D2B7FD1CB2149400FB034E /* AlexQQContactsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexQQContactsHeaderView.m; sourceTree = "<group>"; };
+		CB8E00C5F26F20E40B2F57ED /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DE95CEBECCA3A98469671662 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		780C17F11CB10F8C0099AD78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780C184F1CB14EA20099AD78 /* libsqlite3.0.tbd in Frameworks */,
+				EC0CFC0B87EE09942BA32BB3 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780C180A1CB10F8C0099AD78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780C18151CB10F8C0099AD78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		512696A1090090E29BAFB9DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				780C184E1CB14EA20099AD78 /* libsqlite3.0.tbd */,
+				42B4E1D2429B8050EF7649E7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		780C17EB1CB10F8C0099AD78 = {
+			isa = PBXGroup;
+			children = (
+				780C17F61CB10F8C0099AD78 /* AlexQQ */,
+				780C18101CB10F8C0099AD78 /* AlexQQTests */,
+				780C181B1CB10F8C0099AD78 /* AlexQQUITests */,
+				780C17F51CB10F8C0099AD78 /* Products */,
+				EDFA7F6EA237C9EA8BA1EC61 /* Pods */,
+				512696A1090090E29BAFB9DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		780C17F51CB10F8C0099AD78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				780C17F41CB10F8C0099AD78 /* AlexQQ.app */,
+				780C180D1CB10F8C0099AD78 /* AlexQQTests.xctest */,
+				780C18181CB10F8C0099AD78 /* AlexQQUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		780C17F61CB10F8C0099AD78 /* AlexQQ */ = {
+			isa = PBXGroup;
+			children = (
+				780C183C1CB1130F0099AD78 /* Library */,
+				780C182A1CB110200099AD78 /* Base.lproj */,
+				780C182F1CB110200099AD78 /* Controllers */,
+				780C18301CB110200099AD78 /* DataPersistence */,
+				780C18311CB110200099AD78 /* Models */,
+				780C18321CB110200099AD78 /* Network */,
+				780C18331CB110200099AD78 /* Resource */,
+				780C18341CB110200099AD78 /* Views */,
+				780C17FA1CB10F8C0099AD78 /* AppDelegate.h */,
+				780C17FB1CB10F8C0099AD78 /* AppDelegate.m */,
+				780C17F71CB10F8C0099AD78 /* Supporting Files */,
+			);
+			path = AlexQQ;
+			sourceTree = "<group>";
+		};
+		780C17F71CB10F8C0099AD78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				780C18081CB10F8C0099AD78 /* Info.plist */,
+				780C17F81CB10F8C0099AD78 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		780C18101CB10F8C0099AD78 /* AlexQQTests */ = {
+			isa = PBXGroup;
+			children = (
+				780C18111CB10F8C0099AD78 /* AlexQQTests.m */,
+				780C18131CB10F8C0099AD78 /* Info.plist */,
+			);
+			path = AlexQQTests;
+			sourceTree = "<group>";
+		};
+		780C181B1CB10F8C0099AD78 /* AlexQQUITests */ = {
+			isa = PBXGroup;
+			children = (
+				780C181C1CB10F8C0099AD78 /* AlexQQUITests.m */,
+				780C181E1CB10F8C0099AD78 /* Info.plist */,
+			);
+			path = AlexQQUITests;
+			sourceTree = "<group>";
+		};
+		780C182A1CB110200099AD78 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				780C182B1CB110200099AD78 /* LaunchScreen.storyboard */,
+				780C182D1CB110200099AD78 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		780C182F1CB110200099AD78 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				780C18391CB111270099AD78 /* Contacts */,
+				780C183A1CB111270099AD78 /* Message */,
+				780C183B1CB111270099AD78 /* Zone */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		780C18301CB110200099AD78 /* DataPersistence */ = {
+			isa = PBXGroup;
+			children = (
+				789D2DF61CB35EB700DAE69D /* AlexQQDataPersistence.h */,
+				789D2DF71CB35EB700DAE69D /* AlexQQDataPersistence.m */,
+			);
+			path = DataPersistence;
+			sourceTree = "<group>";
+		};
+		780C18311CB110200099AD78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78934C7C1CB2612500CAC571 /* AlexQQAuthorsModel.h */,
+				78934C7D1CB2612500CAC571 /* AlexQQAuthorsModel.m */,
+				78934C7F1CB2616600CAC571 /* AlexQQCategoryModel.h */,
+				78934C801CB2616600CAC571 /* AlexQQCategoryModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		780C18321CB110200099AD78 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				78934C741CB25AED00CAC571 /* Parsers */,
+				78934C751CB25AED00CAC571 /* Requests */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		780C18331CB110200099AD78 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				780C18371CB110760099AD78 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		780C18341CB110200099AD78 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				780C18001CB10F8C0099AD78 /* Main.storyboard */,
+				780C18051CB10F8C0099AD78 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		780C18391CB111270099AD78 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				780C18501CB15DBF0099AD78 /* AlexQQContactsViewController.h */,
+				780C18511CB15DBF0099AD78 /* AlexQQContactsViewController.m */,
+				78D2B7FC1CB2149400FB034E /* AlexQQContactsHeaderView.h */,
+				78D2B7FD1CB2149400FB034E /* AlexQQContactsHeaderView.m */,
+				78A5C2D51CB2C2870015DFAE /* AlexQQContactsTableViewCell.h */,
+				78A5C2D61CB2C2870015DFAE /* AlexQQContactsTableViewCell.m */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		780C183A1CB111270099AD78 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				780C18531CB15DD70099AD78 /* AlexQQMessageViewController.h */,
+				780C18541CB15DD70099AD78 /* AlexQQMessageViewController.m */,
+				788BD7F01CB3B8CC00A807C0 /* AlexQQMessageTableViewCell.h */,
+				788BD7F11CB3B8CC00A807C0 /* AlexQQMessageTableViewCell.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		780C183B1CB111270099AD78 /* Zone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Zone;
+			sourceTree = "<group>";
+		};
+		780C183C1CB1130F0099AD78 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				786A00861CB45E8700E288E4 /* MetaBall */,
+				780C183D1CB14E830099AD78 /* FMDB */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		780C183D1CB14E830099AD78 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				780C183E1CB14E830099AD78 /* FMDatabase.h */,
+				780C183F1CB14E830099AD78 /* FMDatabase.m */,
+				780C18401CB14E830099AD78 /* FMDatabaseAdditions.h */,
+				780C18411CB14E830099AD78 /* FMDatabaseAdditions.m */,
+				780C18421CB14E830099AD78 /* FMDatabasePool.h */,
+				780C18431CB14E830099AD78 /* FMDatabasePool.m */,
+				780C18441CB14E830099AD78 /* FMDatabaseQueue.h */,
+				780C18451CB14E830099AD78 /* FMDatabaseQueue.m */,
+				780C18461CB14E830099AD78 /* FMDB.h */,
+				780C18471CB14E830099AD78 /* FMResultSet.h */,
+				780C18481CB14E830099AD78 /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		786A00861CB45E8700E288E4 /* MetaBall */ = {
+			isa = PBXGroup;
+			children = (
+				786A00871CB45E8700E288E4 /* AZMetaBall.h */,
+				786A00881CB45E8700E288E4 /* AZMetaBall.m */,
+				786A00891CB45E8700E288E4 /* AZMetaBallCanvas.h */,
+				786A008A1CB45E8700E288E4 /* AZMetaBallCanvas.m */,
+				786A008B1CB45E8700E288E4 /* AZMetaBallItem.h */,
+				786A008C1CB45E8700E288E4 /* AZMetaBallItem.m */,
+				786A008D1CB45E8700E288E4 /* Circle.h */,
+				786A008E1CB45E8700E288E4 /* Circle.m */,
+				786A008F1CB45E8700E288E4 /* id_1.png */,
+				786A00901CB45E8700E288E4 /* id_2.png */,
+				786A00911CB45E8700E288E4 /* id_3.png */,
+				786A00921CB45E8700E288E4 /* id_4.png */,
+				786A00931CB45E8700E288E4 /* id_5.png */,
+				786A00941CB45E8700E288E4 /* Utils */,
+			);
+			path = MetaBall;
+			sourceTree = "<group>";
+		};
+		786A00941CB45E8700E288E4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				786A00951CB45E8700E288E4 /* PointUtils.h */,
+				786A00961CB45E8700E288E4 /* PointUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		78934C741CB25AED00CAC571 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				78934C791CB25EBA00CAC571 /* AlexQQContactsRequestParser.h */,
+				78934C7A1CB25EBA00CAC571 /* AlexQQContactsRequestParser.m */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		78934C751CB25AED00CAC571 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				78934C761CB25B4300CAC571 /* AlexQQContactsRequest.h */,
+				78934C771CB25B4300CAC571 /* AlexQQContactsRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		EDFA7F6EA237C9EA8BA1EC61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB8E00C5F26F20E40B2F57ED /* Pods.debug.xcconfig */,
+				DE95CEBECCA3A98469671662 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		780C17F31CB10F8C0099AD78 /* AlexQQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780C18211CB10F8C0099AD78 /* Build configuration list for PBXNativeTarget "AlexQQ" */;
+			buildPhases = (
+				8E7217FF92116BE3F4ADD259 /* Check Pods Manifest.lock */,
+				780C17F01CB10F8C0099AD78 /* Sources */,
+				780C17F11CB10F8C0099AD78 /* Frameworks */,
+				780C17F21CB10F8C0099AD78 /* Resources */,
+				515CF643B3165863E68C3AF3 /* Embed Pods Frameworks */,
+				6E7BF5BB4CFCA307D773ED3A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlexQQ;
+			productName = AlexQQ;
+			productReference = 780C17F41CB10F8C0099AD78 /* AlexQQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		780C180C1CB10F8C0099AD78 /* AlexQQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780C18241CB10F8C0099AD78 /* Build configuration list for PBXNativeTarget "AlexQQTests" */;
+			buildPhases = (
+				780C18091CB10F8C0099AD78 /* Sources */,
+				780C180A1CB10F8C0099AD78 /* Frameworks */,
+				780C180B1CB10F8C0099AD78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				780C180F1CB10F8C0099AD78 /* PBXTargetDependency */,
+			);
+			name = AlexQQTests;
+			productName = AlexQQTests;
+			productReference = 780C180D1CB10F8C0099AD78 /* AlexQQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		780C18171CB10F8C0099AD78 /* AlexQQUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780C18271CB10F8C0099AD78 /* Build configuration list for PBXNativeTarget "AlexQQUITests" */;
+			buildPhases = (
+				780C18141CB10F8C0099AD78 /* Sources */,
+				780C18151CB10F8C0099AD78 /* Frameworks */,
+				780C18161CB10F8C0099AD78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				780C181A1CB10F8C0099AD78 /* PBXTargetDependency */,
+			);
+			name = AlexQQUITests;
+			productName = AlexQQUITests;
+			productReference = 780C18181CB10F8C0099AD78 /* AlexQQUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		780C17EC1CB10F8C0099AD78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = JixinZhang;
+				TargetAttributes = {
+					780C17F31CB10F8C0099AD78 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					780C180C1CB10F8C0099AD78 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 780C17F31CB10F8C0099AD78;
+					};
+					780C18171CB10F8C0099AD78 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 780C17F31CB10F8C0099AD78;
+					};
+				};
+			};
+			buildConfigurationList = 780C17EF1CB10F8C0099AD78 /* Build configuration list for PBXProject "AlexQQ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 780C17EB1CB10F8C0099AD78;
+			productRefGroup = 780C17F51CB10F8C0099AD78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				780C17F31CB10F8C0099AD78 /* AlexQQ */,
+				780C180C1CB10F8C0099AD78 /* AlexQQTests */,
+				780C18171CB10F8C0099AD78 /* AlexQQUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		780C17F21CB10F8C0099AD78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780C18071CB10F8C0099AD78 /* LaunchScreen.storyboard in Resources */,
+				780C18361CB110200099AD78 /* Main.storyboard in Resources */,
+				786A009E1CB45E8700E288E4 /* id_4.png in Resources */,
+				786A009D1CB45E8700E288E4 /* id_3.png in Resources */,
+				786A009B1CB45E8700E288E4 /* id_1.png in Resources */,
+				786A009C1CB45E8700E288E4 /* id_2.png in Resources */,
+				786A009F1CB45E8700E288E4 /* id_5.png in Resources */,
+				780C18351CB110200099AD78 /* LaunchScreen.storyboard in Resources */,
+				780C18021CB10F8C0099AD78 /* Main.storyboard in Resources */,
+				780C18381CB110760099AD78 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780C180B1CB10F8C0099AD78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780C18161CB10F8C0099AD78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		515CF643B3165863E68C3AF3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E7BF5BB4CFCA307D773ED3A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E7217FF92116BE3F4ADD259 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		780C17F01CB10F8C0099AD78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780C18551CB15DD70099AD78 /* AlexQQMessageViewController.m in Sources */,
+				78934C7B1CB25EBA00CAC571 /* AlexQQContactsRequestParser.m in Sources */,
+				780C18491CB14E830099AD78 /* FMDatabase.m in Sources */,
+				78D2B7FE1CB2149400FB034E /* AlexQQContactsHeaderView.m in Sources */,
+				786A00971CB45E8700E288E4 /* AZMetaBall.m in Sources */,
+				788BD7F21CB3B8CC00A807C0 /* AlexQQMessageTableViewCell.m in Sources */,
+				786A00981CB45E8700E288E4 /* AZMetaBallCanvas.m in Sources */,
+				78A5C2D71CB2C2870015DFAE /* AlexQQContactsTableViewCell.m in Sources */,
+				786A00A01CB45E8700E288E4 /* PointUtils.m in Sources */,
+				780C17FC1CB10F8C0099AD78 /* AppDelegate.m in Sources */,
+				780C184D1CB14E830099AD78 /* FMResultSet.m in Sources */,
+				780C18521CB15DBF0099AD78 /* AlexQQContactsViewController.m in Sources */,
+				786A00991CB45E8700E288E4 /* AZMetaBallItem.m in Sources */,
+				78934C7E1CB2612500CAC571 /* AlexQQAuthorsModel.m in Sources */,
+				780C184B1CB14E830099AD78 /* FMDatabasePool.m in Sources */,
+				780C17F91CB10F8C0099AD78 /* main.m in Sources */,
+				786A009A1CB45E8700E288E4 /* Circle.m in Sources */,
+				780C184A1CB14E830099AD78 /* FMDatabaseAdditions.m in Sources */,
+				78934C781CB25B4300CAC571 /* AlexQQContactsRequest.m in Sources */,
+				789D2DF81CB35EB700DAE69D /* AlexQQDataPersistence.m in Sources */,
+				780C184C1CB14E830099AD78 /* FMDatabaseQueue.m in Sources */,
+				78934C811CB2616600CAC571 /* AlexQQCategoryModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780C18091CB10F8C0099AD78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780C18121CB10F8C0099AD78 /* AlexQQTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780C18141CB10F8C0099AD78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780C181D1CB10F8C0099AD78 /* AlexQQUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		780C180F1CB10F8C0099AD78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 780C17F31CB10F8C0099AD78 /* AlexQQ */;
+			targetProxy = 780C180E1CB10F8C0099AD78 /* PBXContainerItemProxy */;
+		};
+		780C181A1CB10F8C0099AD78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 780C17F31CB10F8C0099AD78 /* AlexQQ */;
+			targetProxy = 780C18191CB10F8C0099AD78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		780C18001CB10F8C0099AD78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				780C18011CB10F8C0099AD78 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		780C18051CB10F8C0099AD78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				780C18061CB10F8C0099AD78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		780C182B1CB110200099AD78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				780C182C1CB110200099AD78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		780C182D1CB110200099AD78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				780C182E1CB110200099AD78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		780C181F1CB10F8C0099AD78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		780C18201CB10F8C0099AD78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		780C18221CB10F8C0099AD78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8E00C5F26F20E40B2F57ED /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AlexQQ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjixin.AlexQQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		780C18231CB10F8C0099AD78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE95CEBECCA3A98469671662 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AlexQQ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjixin.AlexQQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		780C18251CB10F8C0099AD78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AlexQQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjixin.AlexQQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlexQQ.app/AlexQQ";
+			};
+			name = Debug;
+		};
+		780C18261CB10F8C0099AD78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AlexQQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjixin.AlexQQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlexQQ.app/AlexQQ";
+			};
+			name = Release;
+		};
+		780C18281CB10F8C0099AD78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AlexQQUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjixin.AlexQQUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AlexQQ;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		780C18291CB10F8C0099AD78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AlexQQUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjixin.AlexQQUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AlexQQ;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		780C17EF1CB10F8C0099AD78 /* Build configuration list for PBXProject "AlexQQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780C181F1CB10F8C0099AD78 /* Debug */,
+				780C18201CB10F8C0099AD78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		780C18211CB10F8C0099AD78 /* Build configuration list for PBXNativeTarget "AlexQQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780C18221CB10F8C0099AD78 /* Debug */,
+				780C18231CB10F8C0099AD78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		780C18241CB10F8C0099AD78 /* Build configuration list for PBXNativeTarget "AlexQQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780C18251CB10F8C0099AD78 /* Debug */,
+				780C18261CB10F8C0099AD78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		780C18271CB10F8C0099AD78 /* Build configuration list for PBXNativeTarget "AlexQQUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780C18281CB10F8C0099AD78 /* Debug */,
+				780C18291CB10F8C0099AD78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 780C17EC1CB10F8C0099AD78 /* Project object */;
+}

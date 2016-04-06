@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CQR-ms-uZR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--联系人-->
+        <scene sceneID="k5B-7T-4gA">
+            <objects>
+                <viewController id="p7J-3k-ODa" customClass="AlexQQContactsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RfF-Lp-XTw"/>
+                        <viewControllerLayoutGuide type="bottom" id="GRC-tc-toC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y9k-m0-bJx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="联系人" image="tab_contacts" selectedImage="tab_contacts_selected" id="eCm-Hw-lOf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2En-cQ-TPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="802"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="LAU-HC-LHf">
+            <objects>
+                <viewController id="9Z7-EP-yyO" customClass="AlexQQMessageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oue-QP-3B9"/>
+                        <viewControllerLayoutGuide type="bottom" id="cZF-B5-Gaj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jTr-oi-wkw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="消息" image="tab_message" selectedImage="tab_message_selected" id="WcP-AB-ERI"/>
+                    <connections>
+                        <outlet property="messageTabBarItem" destination="WcP-AB-ERI" id="X95-cv-EYE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oSt-ET-Drb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="-43"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Egj-OW-PyW">
+            <objects>
+                <tabBarController id="CQR-ms-uZR" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="gZ7-jo-fJq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9Z7-EP-yyO" kind="relationship" relationship="viewControllers" id="zkW-Lh-nZg"/>
+                        <segue destination="p7J-3k-ODa" kind="relationship" relationship="viewControllers" id="F0m-BU-4dn"/>
+                        <segue destination="IsG-sz-W0d" kind="relationship" relationship="viewControllers" id="LwK-B3-YtQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4os-VI-8DD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-132" y="-43"/>
+        </scene>
+        <!--动态-->
+        <scene sceneID="CB9-Ga-Aim">
+            <objects>
+                <viewController id="IsG-sz-W0d" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v9u-xU-YLA"/>
+                        <viewControllerLayoutGuide type="bottom" id="sB5-KI-4GU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qU4-M6-5bf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lc-AB-eQz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="动态" id="Dm3-rz-7Fa"/>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="20" width="400" height="44"/>
+                                </variation>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于AlexQQ的几点介绍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfL-um-R1f">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="90" width="204" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.支持离线模式，无网络时加载本地数据" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZ0-Qm-CNv">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="141" width="300" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.加入类似QQ的“一键退朝”取消消息提醒，将消息列表右侧的红点拖离原位置可看到" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MY5-b5-yYP">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="260" width="300" height="89"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.联系人中，每组在线人数随机；显示的  在线人数与组内有网络状态的人数一致" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRM-aP-FsQ">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <rect key="frame" x="20" y="192" width="300" height="68"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9lc-AB-eQz"/>
+                                <exclude reference="yfL-um-R1f"/>
+                                <exclude reference="yZ0-Qm-CNv"/>
+                                <exclude reference="MY5-b5-yYP"/>
+                                <exclude reference="LRM-aP-FsQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="9lc-AB-eQz"/>
+                                <include reference="yfL-um-R1f"/>
+                                <include reference="yZ0-Qm-CNv"/>
+                                <include reference="MY5-b5-yYP"/>
+                                <include reference="LRM-aP-FsQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="动态" image="tab_zone" selectedImage="tab_zone_selected" id="f8x-q5-mxH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Gf-RZ-puJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-132" y="802"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_contacts" width="23" height="26"/>
+        <image name="tab_contacts_selected" width="27" height="26"/>
+        <image name="tab_message" width="25" height="25"/>
+        <image name="tab_message_selected" width="25" height="24"/>
+        <image name="tab_zone" width="25" height="25"/>
+        <image name="tab_zone_selected" width="26" height="25"/>
+    </resources>
+</document>

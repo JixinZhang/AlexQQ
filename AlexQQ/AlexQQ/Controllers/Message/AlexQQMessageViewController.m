@@ -61,6 +61,8 @@
     self.azMetaBallView.backgroundColor = [UIColor clearColor];
     [messageTableView addSubview:self.azMetaBallView];
     
+    //注册通知，当cell的图片下载后刷新tableview
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cellImageIsDownloaded) name:@"ImageIsDownloaded" object:nil];
 }
 
 #pragma mark - receiveMessage and remind
@@ -230,18 +232,23 @@
     if (messageDataArray.count != 0) {
         NSDictionary *dic = [messageDataArray objectAtIndex:indexPath.row];
         
+        __unsafe_unretained AlexQQMessageTableViewCell *weakCell = cell;
         NSString *urlSting = [dic valueForKey:@"avatar"];
         NSURL *url = [NSURL URLWithString:urlSting];
         UIImageView *cacheImageView = [[UIImageView alloc] init];
-        [cacheImageView sd_setImageWithURL:url completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        [cacheImageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"xiaohongdian.png"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
             //添加圆角
             UIGraphicsBeginImageContextWithOptions(cell.avatarImageView.bounds.size, NO, 1.0);
             [[UIBezierPath bezierPathWithRoundedRect:cell.avatarImageView.bounds cornerRadius:25] addClip];
-            [image drawInRect:cell.avatarImageView.bounds];
+            [cacheImageView.image drawInRect:cell.avatarImageView.bounds];
             cell.avatarImageView.image = UIGraphicsGetImageFromCurrentImageContext();
             UIGraphicsEndImageContext();
-
+            if (image ==nil) {
+                cell.avatarImageView.image = [UIImage imageNamed:@"xiaohongdian.png"];
+            }
+            [weakCell setNeedsLayout];
         }];
+
         cell.nicknameLabel.text = [dic valueForKey:@"nickname"];
         cell.messageLabel.text = [dic valueForKey:@"intro"];
     }
@@ -249,6 +256,13 @@
 
 }
 
+
+
+#pragma mark - messageTableView reloadData for avatar
+- (void)cellImageIsDownloaded
+{
+    [messageTableView reloadData];
+}
 
 
 #pragma mark - loadAllMessage
@@ -259,7 +273,7 @@
     [dataPersistence openDataBase];
     arrayOfAllMessageData = [dataPersistence selectMessageDataFomeAuthorTable];
     [dataPersistence closeDataBase];
-    if (arrayOfAllMessageData == nil) {
+    if (arrayOfAllMessageData.count == 0) {
         self.request = [[AlexQQContactsRequest alloc] init];
         NSString *urlString = @"http://7rf426.com2.z0.glb.qiniucdn.com/news.json";
         [self.request sendContactsRequestWithUrl:urlString delegate:self];

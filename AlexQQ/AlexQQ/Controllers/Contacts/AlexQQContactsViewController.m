@@ -263,20 +263,23 @@
 //    //根据返回数据中followStatus决定在线状态和在线时的网络类型
 //    if ([selectedArray containsObject:indexString]) {
 //        NSDictionary *dic = [array objectAtIndex:indexPath.row];
-//        NSString *urlSting = [dic valueForKey:@"avatar"];
-//        NSURL *url = [NSURL URLWithString:urlSting];
-//    //            [cell.avatarImage sd_setImageWithURL:url];
-//    
-//    //添加圆角
+//    __unsafe_unretained AlexQQContactsTableViewCell *weakCell = cell;
+//    NSString *urlSting = [dic valueForKey:@"avatar"];
+//    NSURL *url = [NSURL URLWithString:urlSting];
 //    UIImageView *cacheImageView = [[UIImageView alloc] init];
-//    [cacheImageView sd_setImageWithURL:url];
-//    UIImage *image = cacheImageView.image;
-//    UIGraphicsBeginImageContextWithOptions(cell.avatarImage.bounds.size, NO, 1.0);
-//    [[UIBezierPath bezierPathWithRoundedRect:cell.avatarImage.bounds cornerRadius:25] addClip];
-//    [image drawInRect:cell.avatarImage.bounds];
-//    cell.avatarImage.image = UIGraphicsGetImageFromCurrentImageContext();
-//    UIGraphicsEndImageContext();
-//    
+//    [cacheImageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"xiaohongdian.png"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+//        //添加圆角
+//        UIGraphicsBeginImageContextWithOptions(cell.avatarImage.bounds.size, NO, 1.0);
+//        [[UIBezierPath bezierPathWithRoundedRect:cell.avatarImage.bounds cornerRadius:25] addClip];
+//        [cacheImageView.image drawInRect:cell.avatarImage.bounds];
+//        cell.avatarImage.image = UIGraphicsGetImageFromCurrentImageContext();
+//        UIGraphicsEndImageContext();
+//        if (image ==nil) {
+//            cell.avatarImage.image = [UIImage imageNamed:@"xiaohongdian.png"];
+//        }
+//        [weakCell setNeedsLayout];
+//    }];
+//
 //
 //        cell.nicknameLabel.text = [dic valueForKey:@"nickname"];
 //        cell.introLabel.text = [dic valueForKey:@"intro"];
@@ -300,19 +303,22 @@
     if (indexPath.row < (long)numberOfOnlineContacts) {
         if ([selectedArray containsObject:indexString]) {
             NSDictionary *dic = [array objectAtIndex:indexPath.row];
+            __unsafe_unretained AlexQQContactsTableViewCell *weakCell = cell;
             NSString *urlSting = [dic valueForKey:@"avatar"];
             NSURL *url = [NSURL URLWithString:urlSting];
-//            [cell.avatarImage sd_setImageWithURL:url];
-            //添加圆角
             UIImageView *cacheImageView = [[UIImageView alloc] init];
-            [cacheImageView sd_setImageWithURL:url];
-            UIImage *image = cacheImageView.image;
-            UIGraphicsBeginImageContextWithOptions(cell.avatarImage.bounds.size, NO, 1.0);
-            [[UIBezierPath bezierPathWithRoundedRect:cell.avatarImage.bounds cornerRadius:25] addClip];
-            [image drawInRect:cell.avatarImage.bounds];
-            cell.avatarImage.image = UIGraphicsGetImageFromCurrentImageContext();
-            UIGraphicsEndImageContext();
-            
+            [cacheImageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"xiaohongdian.png"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                //添加圆角
+                UIGraphicsBeginImageContextWithOptions(cell.avatarImage.bounds.size, NO, 1.0);
+                [[UIBezierPath bezierPathWithRoundedRect:cell.avatarImage.bounds cornerRadius:25] addClip];
+                [cacheImageView.image drawInRect:cell.avatarImage.bounds];
+                cell.avatarImage.image = UIGraphicsGetImageFromCurrentImageContext();
+                UIGraphicsEndImageContext();
+                if (image ==nil) {
+                    cell.avatarImage.image = [UIImage imageNamed:@"xiaohongdian.png"];
+                }
+                [weakCell setNeedsLayout];
+            }];
             
             cell.nicknameLabel.text = [dic valueForKey:@"nickname"];
             cell.introLabel.text = [dic valueForKey:@"intro"];
@@ -328,19 +334,22 @@
     }else {
         if ([selectedArray containsObject:indexString]) {
             NSDictionary *dic = [array objectAtIndex:indexPath.row];
+            __unsafe_unretained AlexQQContactsTableViewCell *weakCell = cell;
             NSString *urlSting = [dic valueForKey:@"avatar"];
             NSURL *url = [NSURL URLWithString:urlSting];
-//            [cell.avatarImage sd_setImageWithURL:url];
-            
-            //添加圆角
             UIImageView *cacheImageView = [[UIImageView alloc] init];
-            [cacheImageView sd_setImageWithURL:url];
-            UIImage *image = cacheImageView.image;
-            UIGraphicsBeginImageContextWithOptions(cell.avatarImage.bounds.size, NO, 1.0);
-            [[UIBezierPath bezierPathWithRoundedRect:cell.avatarImage.bounds cornerRadius:25] addClip];
-            [image drawInRect:cell.avatarImage.bounds];
-            cell.avatarImage.image = UIGraphicsGetImageFromCurrentImageContext();
-            UIGraphicsEndImageContext();
+            [cacheImageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"xiaohongdian.png"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                //添加圆角
+                UIGraphicsBeginImageContextWithOptions(cell.avatarImage.bounds.size, NO, 1.0);
+                [[UIBezierPath bezierPathWithRoundedRect:cell.avatarImage.bounds cornerRadius:25] addClip];
+                [cacheImageView.image drawInRect:cell.avatarImage.bounds];
+                cell.avatarImage.image = UIGraphicsGetImageFromCurrentImageContext();
+                UIGraphicsEndImageContext();
+                if (image ==nil) {
+                    cell.avatarImage.image = [UIImage imageNamed:@"xiaohongdian.png"];
+                }
+                [weakCell setNeedsLayout];
+            }];
 
             cell.nicknameLabel.text = [dic valueForKey:@"nickname"];
             cell.introLabel.text = [dic valueForKey:@"intro"];

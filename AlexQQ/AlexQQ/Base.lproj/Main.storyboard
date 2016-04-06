@@ -82,9 +82,6 @@
                                 <items>
                                     <navigationItem title="动态" id="Dm3-rz-7Fa"/>
                                 </items>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="20" width="400" height="44"/>
-                                </variation>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于AlexQQ的几点介绍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfL-um-R1f">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -124,8 +121,22 @@
                                     <rect key="frame" x="20" y="192" width="300" height="68"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.联系人头像加圆形框" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0DZ-3a-0U0">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="374" width="300" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9lc-AB-eQz" firstAttribute="top" secondItem="v9u-xU-YLA" secondAttribute="bottom" id="DDm-OI-bhR"/>
+                            <constraint firstAttribute="trailing" secondItem="9lc-AB-eQz" secondAttribute="trailing" id="Jrs-Dg-9GQ"/>
+                            <constraint firstItem="9lc-AB-eQz" firstAttribute="leading" secondItem="qU4-M6-5bf" secondAttribute="leading" id="UJ3-Uv-tmp"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="9lc-AB-eQz"/>
@@ -133,6 +144,12 @@
                                 <exclude reference="yZ0-Qm-CNv"/>
                                 <exclude reference="MY5-b5-yYP"/>
                                 <exclude reference="LRM-aP-FsQ"/>
+                                <exclude reference="0DZ-3a-0U0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="DDm-OI-bhR"/>
+                                <exclude reference="Jrs-Dg-9GQ"/>
+                                <exclude reference="UJ3-Uv-tmp"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -142,6 +159,12 @@
                                 <include reference="yZ0-Qm-CNv"/>
                                 <include reference="MY5-b5-yYP"/>
                                 <include reference="LRM-aP-FsQ"/>
+                                <include reference="0DZ-3a-0U0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="DDm-OI-bhR"/>
+                                <include reference="Jrs-Dg-9GQ"/>
+                                <include reference="UJ3-Uv-tmp"/>
                             </mask>
                         </variation>
                     </view>

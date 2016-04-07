@@ -37,14 +37,5 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
-- (void)testAddFriendButtonClicked
-{
-    
-    XCUIApplication *app = [[XCUIApplication alloc] init];
-    [app.tabBars.buttons[@"联系人"] tap];
-    [app.tables.buttons[@"新朋友"] tap];
-    [app.alerts[@"提示"].collectionViews.buttons[@"确定"] tap];
-    
-}
 
 @end

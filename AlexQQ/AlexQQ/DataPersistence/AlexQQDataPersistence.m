@@ -12,34 +12,39 @@
 
 @implementation AlexQQDataPersistence
 
-- (void)openDataBase
+- (BOOL)openDataBase
 {
     NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
     NSString *currentFileName = [NSString stringWithFormat:@"Contacts.rdb"];
     NSString *currentFilePath = [documentPath stringByAppendingPathComponent:currentFileName];
     
     self.dataBase = [FMDatabase databaseWithPath:currentFilePath];
-    [self.dataBase open];
+    BOOL result = [self.dataBase open];
+    return result;
 }
 
-- (void)closeDataBase
+- (BOOL)closeDataBase
 {
     NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
     NSString *currentFileName = [NSString stringWithFormat:@"Contacts.rdb"];
     NSString *currentFilePath = [documentPath stringByAppendingPathComponent:currentFileName];
     
     self.dataBase = [FMDatabase databaseWithPath:currentFilePath];
+    BOOL result = [self.dataBase close];
+    return result;
+}
+
+- (BOOL)createDataBase
+{
+    
+    NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+    NSString *currentFileName = [NSString stringWithFormat:@"Contacts.rdb"];
+    NSString *currentFilePath = [documentPath stringByAppendingPathComponent:currentFileName];
+    
+    self.dataBase = [FMDatabase databaseWithPath:currentFilePath];
+    BOOL result = [self.dataBase open];
     [self.dataBase close];
-}
-
-- (void)createDataBase
-{
-    
-    NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    NSString *currentFileName = [NSString stringWithFormat:@"Contacts.rdb"];
-    NSString *currentFilePath = [documentPath stringByAppendingPathComponent:currentFileName];
-    
-    self.dataBase = [FMDatabase databaseWithPath:currentFilePath];
+    return result;
 }
 
 - (BOOL)createCategoryTable

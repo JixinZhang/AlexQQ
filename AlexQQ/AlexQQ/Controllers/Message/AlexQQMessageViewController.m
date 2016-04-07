@@ -69,12 +69,12 @@
 - (void)receiveMessage
 {
     [remindNumberLabel removeFromSuperview];
-    remindNumberLabel = [[UILabel alloc] initWithFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width-30, 64, 16, 16)];
+    remindNumberLabel = [[UILabel alloc] initWithFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width-30, 64, 20, 20)];
     remindNumberLabel.backgroundColor = [UIColor redColor];
     remindNumberLabel.font = [UIFont systemFontOfSize:14];
     remindNumberLabel.textAlignment = UITextAlignmentCenter;
     remindNumberLabel.textColor = [UIColor whiteColor];
-    remindNumberLabel.layer.cornerRadius = 8;
+    remindNumberLabel.layer.cornerRadius = 10;
     remindNumberLabel.clipsToBounds = YES;
     
     int remindNumber = arc4random()%10+1;

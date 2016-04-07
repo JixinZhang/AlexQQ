@@ -39,6 +39,8 @@
 		78934C7B1CB25EBA00CAC571 /* AlexQQContactsRequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 78934C7A1CB25EBA00CAC571 /* AlexQQContactsRequestParser.m */; };
 		78934C7E1CB2612500CAC571 /* AlexQQAuthorsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78934C7D1CB2612500CAC571 /* AlexQQAuthorsModel.m */; };
 		78934C811CB2616600CAC571 /* AlexQQCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78934C801CB2616600CAC571 /* AlexQQCategoryModel.m */; };
+		78974CB11CB57E6C00EE4A82 /* AlexQQContactsRequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 78934C7A1CB25EBA00CAC571 /* AlexQQContactsRequestParser.m */; };
+		78974CB21CB5809F00EE4A82 /* AlexQQContactsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 78934C771CB25B4300CAC571 /* AlexQQContactsRequest.m */; };
 		789D2DF81CB35EB700DAE69D /* AlexQQDataPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 789D2DF71CB35EB700DAE69D /* AlexQQDataPersistence.m */; };
 		78A5C2D71CB2C2870015DFAE /* AlexQQContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A5C2D61CB2C2870015DFAE /* AlexQQContactsTableViewCell.m */; };
 		78D2B7FE1CB2149400FB034E /* AlexQQContactsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D2B7FD1CB2149400FB034E /* AlexQQContactsHeaderView.m */; };
@@ -632,6 +634,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				780C18121CB10F8C0099AD78 /* AlexQQTests.m in Sources */,
+				78974CB11CB57E6C00EE4A82 /* AlexQQContactsRequestParser.m in Sources */,
+				78974CB21CB5809F00EE4A82 /* AlexQQContactsRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,8 +808,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+				);
 				INFOPLIST_FILE = AlexQQTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zjixin.AlexQQTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlexQQ.app/AlexQQ";
@@ -816,8 +829,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+				);
 				INFOPLIST_FILE = AlexQQTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zjixin.AlexQQTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlexQQ.app/AlexQQ";

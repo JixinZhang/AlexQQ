@@ -13,11 +13,11 @@
 
 @property (nonatomic, strong) FMDatabase *dataBase;
 
-- (void)openDataBase;
+- (BOOL)openDataBase;
 
-- (void)closeDataBase;
+- (BOOL)closeDataBase;
 
-- (void)createDataBase;
+- (BOOL)createDataBase;
 
 - (BOOL)createCategoryTable;
 
